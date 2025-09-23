@@ -2,14 +2,14 @@ from time import sleep
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-#from base.base_test import BaseTest 
+from base.base_test import BaseTest 
 from pages.login_page import LoginPage
 from pages.vacancies_page import VacanciesPage
-from automation_framework.base.base_test import BaseTest
 
 
 
-class TestLogin(BaseTest):
+
+class TestAddVaccancies(BaseTest):
     
     def test_add_vacancies(self):
         loginpage = LoginPage(self.driver)
